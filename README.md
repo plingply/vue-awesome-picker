@@ -1,5 +1,6 @@
 ## ⚠️ **DEPRECATED** ⚠️
 内部逻辑 💩
+删除城市相关
 
 # vue-awesome-picker [![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url]
 基于 [Vue.js](https://github.com/vuejs/vue) & [Better-Scroll](https://github.com/ustbhuangyi/better-scroll) 的移动端 picker 组件
@@ -70,9 +71,17 @@ methods: {
 >vue-awesome-picker 通过数据结构不同来区分是普通 picker 还是联级 picker, 所以请严格按照以下数据结构进行配置
 
 单列、多列 picker 以双层数组的形式传入 data
+
+data 支持 {
+  label:'描述文字',
+  value:'value'
+}
 ``` javascript
 [
-  ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'],
+  [{
+  label:'描述文字',
+  value:'value'
+}, 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'],
   ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 ]
 ```
